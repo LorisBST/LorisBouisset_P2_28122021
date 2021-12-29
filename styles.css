@@ -21,18 +21,29 @@
 
 .topnav {
   position: absolute;
+  font-family: Raleway;
   top: 28px;
   right: 75px;
 }
 
-.entête{
-  margin: 20px;
+.entête{ 
+  position:relative;
+  font-family: Raleway;
+  font-size: 26px;
+  left: 60px;
+  top: 40px;
 }
 
 .soustexte{
-  margin: 20px;
+  position:relative;
+  font-family: Raleway;
+  font-size: 20px;
+  top:26px;
+  left: 58px
 }
 
 .LogoBooki {
-  margin: 20px;
+  position: relative;
+  left: 70px;
+  top: 25px;
 }
