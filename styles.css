@@ -1,3 +1,8 @@
+body {
+padding: 10px;
+
+}
+
 .topnav {
   background-color: rgb(255, 255, 255);
   overflow: hidden;
@@ -6,9 +11,10 @@
   float: left;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 18px;
   text-decoration:none;
-  font-size: 17px;
+  font-size: 21px;
+  margin: 22px;
 }
 .topnav a:hover {
   background-color: wh;
@@ -26,24 +32,125 @@
   right: 75px;
 }
 
-.entête{ 
+.entete{ 
   position:relative;
   font-family: Raleway;
-  font-size: 26px;
-  left: 60px;
-  top: 40px;
+  font-size: 38px;
+  margin: 30px;
 }
 
 .soustexte{
   position:relative;
   font-family: Raleway;
-  font-size: 20px;
-  top:26px;
-  left: 58px
+  font-size: 24px; 
+  margin: 30px;
+  bottom: 15px;
 }
 
 .LogoBooki {
   position: relative;
-  left: 70px;
-  top: 25px;
+  margin-left: 40px;
+  left: 83px;
+  top:45px;
 }
+
+.topSecteur {
+  top: 50px;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 90px;  
+  text-align: left;
+}
+
+/* barre de recherche */
+.searchbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 30px;
+}
+
+.localisation {
+  background-color: #dbdbdb;
+  padding: 10px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.map {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.search {
+  background-color: #0065fc;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: white;
+  padding: 12px;
+  font-size: small;
+  font-weight: bold;
+  font-family: Raleway;
+}
+.searchtext {
+  border-left: none;
+  text-align: center;
+  font-size: small;
+  border-right: none;
+  border: 0.5px solid #dbdbdb;
+  padding: 11px;
+  font-family: Raleway;
+}
+.searchtext::placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-family: Raleway;
+}
+.navlist p {
+  font-weight: bold;
+  margin: 0;
+}
+.list-filtre {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-weight: bold;
+  margin: 0;
+}
+.list-filtre i {
+  display: flex;
+  border-radius: 60px;
+}
+.text-filtre {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.filtre {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  margin-left: 20px;
+  border: 3px solid #e2e0e0;
+  border-radius: 60px; 
+}
+.filtre i {
+  border: 12px solid #deebff;
+    background-color: #deebff;
+    color: #0065fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtre:hover {
+  background-color: #deebff;
+}
+
