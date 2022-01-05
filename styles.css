@@ -1,62 +1,44 @@
-body {
-padding: 10px;
 
+* {
+  font-family: Raleway;
+  box-sizing: border-box;
+ }
+/* NAVBAR */
+ #logo {
+  margin-right: auto;
+  padding: 0 2rem;
+  }
+
+nav {
+display: flex;
+align-items:center;
+justify-content: flex-end;
+flex-wrap: wrap;
 }
 
-.topnav {
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
+nav a {
+padding: 2rem;  
+text-decoration: initial;
+color: black;
+font-size: 20px;
 }
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 18px;
-  text-decoration:none;
-  font-size: 21px;
-  margin: 22px;
+
+@media (max-width: 800px) {
+ .sub_nav {
+  order: 1;  
+  flex-basis: 100%;
 }
-.topnav a:hover {
+}
+
+nav a:hover {
   background-color: wh;
   color: #0065fc;
-}
-.topnav a.active {
-  background-color: #0065fc;
-  color: white;
+  border-top: 3px solid #0065fc;
 }
 
-.topnav {
-  position: absolute;
-  font-family: Raleway;
-  top: 28px;
-  right: 75px;
-}
-
-.entete{ 
-  padding-top: 20px;
-  margin-left: 20px;
-  font-family: Raleway;
-  font-size: 38px;
-  margin: 30px;
-}
-
-.soustexte{
-  margin-left: 20px;
-  font-family: Raleway;
-  font-size: 24px; 
-  margin: 30px;
-  bottom: 15px;
-}
-
-.LogoBooki {
-  padding-top: 20px;
-  margin-left: 20px;
-}
-
+/* BODY */
 .topSecteur {
-  padding-top: 20px;
-  margin-left: 20px;
-  text-align: left;
+padding: 0 2rem;
 }
 
 /* barre de recherche */
@@ -191,10 +173,11 @@ padding: 10px;
   border-radius: 20px 20px 0px 0px;
   z-index: 1;
   height: 120px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .wrap_hebergement p {
-  font-size: 13px;
   color: rgb(0, 0, 0);
   margin-top: -8px;
 }
@@ -218,9 +201,19 @@ padding: 10px;
 }
 
 .hebergement {
-  background: white;
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.block_hebergement {
+  background-color: #f2f2f2;
   border-radius: 20px;
-  height: 220px;
-  padding: 20px;
-  box-shadow: 1px 1px 5px rgb(0 0 0 / 21%);
+  margin: 20px;
+  padding: 15px;
 }
