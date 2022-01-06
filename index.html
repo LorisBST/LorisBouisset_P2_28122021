@@ -18,7 +18,7 @@
 <body>
 <nav>
       <img id="logo" src="images/logo/Booki.png"
-      alt="Logo Booki" style="width:10%;height:10%;/> 
+      alt="Logo Booki"/> 
       
         <div class="sub_nav">
           <a href="">Hébergements</a>
@@ -28,47 +28,42 @@
 
 <header>
 
+<main class="wrapper">
 <!-- TITRE ET SOUS-TITRE -->
-    <div class="topSecteur">
-      <h1 class="entete">Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre ville ou en pleine nature</p>
-    </div>  
-
+    <h1 class="entete">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre ville ou en pleine nature</p>
+  
 <!-- BARRE DE RECHERCHE VILLE -->
-    <div class="searchbar">
-      <span class="localisation"><i class="fas fa-map-marker-alt"></i></span> 
-      <input
-        class="searchtext"
-        type="text"
-        placeholder="Marseille, France"
-      />
-      <p class="search">Rechercher</p>
-    </div>    
+  <div class="searchbar">
+    <i class="fas fa-map-marker-alt"></i>
+    <input type="text" placeholder="Marseille, France"/>
+    <button>Rechercher</button>
+  </div>
+</main>    
 
 <!-- FILTRES -->
-    <div class="navlist">
-      <p>Filtres</p>
-       <div class="list-filtre">
-        <div class="filtre">
-          <span class="map"><i class="fas fa-money-bill-wave"></i></span> 
-          <span class="text-filtre">économique</span>
-        </div>
-        <div class="filtre">
-          <span class="map"><i class="fas fa-child"></i></span> 
-          <span class="text-filtre">Familial</span>
-        </div>
-        <div class="filtre">
-          <span class="map"><i class="fas fa-heart"></i></span> 
-          <span class="text-filtre">Romantique</span>
-        </div>
-        <div class="filtre">
-          <span class="map"><i class="fas fa-dog"></i></span> 
-          <span class="text-filtre">Animaux autorisés</span>
-      </div>
-      
-      </div>
-    </div>
+<div class=filter-list>
+  <h1>Filtres</h1> 
+ 
+  <div class=filter>
+   <i class="fas fa-money-bill-wave"></i>
+   <span>Economique</span> 
   </div>
+  <div class=filter>
+    <i class="fas fa-child"></i>
+    <span>Familial</span> 
+   </div>
+   <div class=filter>
+    <i class="fas fa-heart"></i>
+    <span>Romantique</span> 
+   </div>
+   <div class=filter>
+    <i class="fas fa-dog"></i>
+    <span>Animaux autorisés</span> 
+   </div>
+</div>
+
+     
 
 <!-- ICONE I +500 LOGEMENTS -->
 <div class="logements">
