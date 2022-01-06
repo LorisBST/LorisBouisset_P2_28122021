@@ -126,17 +126,26 @@ padding: 0 1rem;
 
 
 /* ICONE INFO */
-.iconinfo {
-  padding-top: 20px;
-  margin-left: 20px;
+.iconmessage {
   display: flex;
   align-items: center;
+  gap: 0.8rem;
+  padding: 0 0 0 2rem;
+
 }
 
-.texticoninfo {
-  display: flex;
-  margin-left: 15px;
+.iconmessage .fas {
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid gainsboro;
+  width: 2rem;
+  height: 2rem;
+ color: var(--blue);
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
+
 
 /* Block hebergement */
 .wrap_hebergement {
