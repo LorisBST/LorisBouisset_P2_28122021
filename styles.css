@@ -2,10 +2,16 @@
 --blue: #0065fc;
 --lightgrey: #f2f2f2;
 }
+
+body {
+padding: 3rem;
+}
+
 * {
   font-family: Raleway;
   box-sizing: border-box;
  }
+
 /* NAVBAR */
  #logo {
   margin-right: auto;
@@ -149,44 +155,31 @@ padding: 0 1rem;
 
 /* Block hebergement */
 .wrap_hebergement {
-  display: grid;
+  grid-gap: 2.5rem;
   grid-template-columns: auto auto auto;
-  grid-gap: 30px;
-  width: fit-content;
-  background-color: #f2f2f2;
-  padding: 40px;
-  border-radius: 20px;
-}
-
-
-.hebergement img {
-  border-radius: 20px 20px 0px 0px;
-  z-index: 1;
-  height: 120px;
-  width: 100%;
-  object-fit: cover;
+  display: grid;
+  margin-bottom: 1rem;
 }
 
 .wrap_hebergement p {
   color: rgb(0, 0, 0);
   margin-top: -8px;
 }
-.hebergement ul li {
-  display: inline-block;
-  font-size: 13px;
-  letter-spacing: -2px;
+
+.img_hebergement {
+  border-radius: 1.5rem 1.5rem 0px 0px;
+  z-index: 1;
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
 }
 
-.stars {
-  margin-left: -30px;
-  margin-top: -10px;
-}
 
-.blue_star {
+.blue {
   color: #0065fc;
 }
 
-.grey_star {
+.grey {
   color: #d1d1d1;
 }
 
@@ -202,8 +195,70 @@ padding: 0 1rem;
 }
 
 .block_hebergement {
+    background-color: #f2f2f2;
+    padding: 3rem;
+    border-radius: 25px;
+    width: 70%;
+}
+
+.afficherPlus {
+padding-top: 2rem;
+}
+
+/* block populaire */
+.populaire {
   background-color: #f2f2f2;
-  border-radius: 20px;
-  margin: 20px;
-  padding: 15px;
+  border-radius: 25px;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 30px;
+  gap: 40px;
+}
+
+.most_popular {
+  margin-top: 10px;
+  gap: 6rem;
+ display: flex;
+ justify-content: space-between;
+ padding: 0 20px 0 20px;
+ align-items: center;
+}
+
+.img_hebergement_popular {
+  border-radius: 1.5rem 0rem 0rem 1.5rem;
+  z-index: 1;
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+}
+
+.grid_container_popular {
+  background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.main_hebergement {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.text_populaire {
+  text-align: left;
+  width: 400px;
+  float: right;
+}
+
+
+.text_populaire h2 {
+  margin-bottom:auto;
+}
+
+.text_populaire .stars {
+  padding-top: 40px;
 }
