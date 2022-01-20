@@ -3,6 +3,10 @@
 --lightgrey: #f2f2f2;
 }
 
+body {
+margin: 0px; 
+padding: 25px; 
+}
 
 * {
   font-family: Raleway;
@@ -59,15 +63,10 @@ padding: 0 20px;
  font-size: 16px;
 }
 
-.searchbar * {
-  padding: 1rem 1.5rem;
-}
-.searchbar i {
- background-color: var(--lightgrey);
- border-radius: 15px 0 0 15px;
-}
+
 
 .searchbar input {
+  padding: 1rem 1.5rem;
  flex-basis: 180px;
 border: 1px solid var(--lightgrey);
 font-weight: bold;
@@ -75,18 +74,23 @@ color: inherit;
 }
 
 .searchbar input::placeholder {
+  padding: 1rem 1.5rem;
   font-weight: bold;
   text-align: right 2px;
   color: inherit;
   font-size: 15px;
 }
 
-.searchbar button {
+.icone_desktop {
   background-color: var(--blue);
   color: white;
   font-weight: bold;
   border-radius: 0 12px 12px 0;
   border: none;
+}
+
+.icone_mobile {
+  display: none;
 }
 
 /* Filtres */
@@ -384,3 +388,62 @@ padding-top: 2rem;
 }
 
 
+/*----------------------tablette (portrait)-------------*/
+
+@media screen and (max-width: 768px) {
+  body {
+  margin: 0px; 
+  padding: 0px;  
+}
+
+.wrapper {
+  text-align: none; 
+  padding: 0 20px;
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.main_hebergement {
+  display: block;
+}
+
+.wrap_hebergement {
+  display: block;
+}
+
+.hebergement {
+  width: 100%;
+}
+
+.block_hebergement {
+  background-color: white; 
+  width: 100%;
+}
+
+.activity_list {
+  display: block;
+}
+
+.footer_columns {
+  display: block;
+}
+
+.icone_desktop {
+  display:none;
+}
+
+.icone_mobile {
+  display: block; 
+  width: 50px;
+  background-color: #0065FC;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  border-right: none;
+  margin-left: -10px;
+}
