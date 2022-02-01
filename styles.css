@@ -209,7 +209,6 @@ padding: 0 12px;
 .block_hebergement {
     background-color: #f2f2f2;
     padding: 36px 36px 0px 36px;
-    margin-bottom: 20px;
     border-radius: 25px;
     width: 70%;
 }
@@ -390,7 +389,83 @@ margin-left: 20px;
   padding: 0 100px;
 }
 
+/*----------------------tablette (paysage)-------------*/
 
+@media screen and (max-width: 1024px) {
+
+
+nav {
+  width: 100%;
+}
+
+.activity_list {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_hebergement {
+  display: block;
+}
+
+.block_hebergement {
+  width: auto;
+  padding: 5px 0 0 10px;
+}
+
+.fa-chart-line:before {
+  margin-left: 40px;
+}
+
+.text_activity {
+  display: flex;
+  justify-content: center;
+}
+
+.img_hebergement_popular {
+  border-radius: 15px 15px;
+  z-index: 1;
+  height: 170px;
+  width: auto;
+  object-fit: cover;
+}
+
+.populaire {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  width: auto;
+  padding: 0 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_hebergement {
+  padding: 0px;
+}
+
+.footer_columns {
+  padding-top: 0px;
+}
+
+.footer_assistance {
+  padding: 0 75px;
+}
+
+.big_activity {
+  margin-bottom: 20px;
+}
+
+.medium_activity {
+  margin-bottom: 20px;
+}
+
+.small_activity {
+  margin-bottom: 20px;
+}
+
+}
 /*----------------------tablette (portrait)-------------*/
 
 @media screen and (max-width: 768px) {
@@ -657,3 +732,4 @@ height: 100%;
   padding: 20px;
   display: block;
 }
+
