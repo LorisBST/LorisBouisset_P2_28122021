@@ -189,7 +189,7 @@ padding: 0 12px;
 
 .hebergement {
   background-color: white;
-  padding: 5px;
+  padding: 7px;
   border-radius: 20px;
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
@@ -652,8 +652,12 @@ gap: 0;
   width: 100%;
 }
 
-.block_hebergement h2 {
-  margin: 20px 0px 10px 15px;
+.block_hebergement h2{
+margin-left: 20px;
+}
+
+.hebergement h2 {
+  margin: 20px 0px 10px 0px;
 }
 
 .afficherPlus {
